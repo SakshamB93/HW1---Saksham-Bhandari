@@ -108,7 +108,7 @@
 
 -- Turns column mode on but headers off
 .mode column
-.headers off
+.headers on
 
 -- Drop existing tables, so you'll start fresh each time this script is run.
 -- TODO!
@@ -137,3 +137,50 @@
 
 -- The SQL statement for the cast output
 -- TODO!
+
+DROP TABLE IF EXISTS movies;
+
+CREATE TABLE movies (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    movie_title TEXT,
+    release_year INTEGER,
+    mpaa_rating TEXT,
+    studio_name TEXT,
+    studio_id INTEGER
+);
+
+INSERT INTO movies (
+    movie_title,
+    release_year,
+    mpaa_rating,
+    studio_name
+) VALUES (
+    "Batman Begins",
+    2005,
+    "PG-13",
+    "Warner Bros"
+);
+
+INSERT INTO movies (
+    movie_title,
+    release_year,
+    mpaa_rating,
+    studio_name
+) VALUES (
+    "The Dark Knight",
+    2008,
+    "PG-13",
+    "Warner Bros"
+);
+
+INSERT INTO movies (
+    movie_title,
+    release_year,
+    mpaa_rating,
+    studio_name
+) VALUES (
+    "The Dark Knight Rises",
+    2012,
+    "PG-13",
+    "Warner Bros"
+);
