@@ -450,8 +450,8 @@ INNER JOIN studios ON studios.id=movies.studio_id;
 .print "========"
 .print ""
 
-SELECT movies.movie_title
+SELECT movies.movie_title,personnel.first_name,personnel.last_name,characters.character_name
 FROM movies
 INNER JOIN characters ON characters.movies_id=movies.id
-SELECT personnel.first_name, personnel.last_name, characters.character_name
-INNER JOIN characters ON characters.personnel_id=personnel.id;
+INNER JOIN personnel ON characters.personnel_id=personnel.id;
+
