@@ -107,8 +107,8 @@
 -- The Dark Knight Rises  Anne Hathaway         Selina Kyle
 
 -- Turns column mode on but headers off
-.mode column
-.headers on
+.mode columns
+.headers off
 
 -- Drop existing tables, so you'll start fresh each time this script is run.
 -- TODO!
@@ -184,3 +184,88 @@ INSERT INTO movies (
     "PG-13",
     "Warner Bros"
 );
+
+DROP TABLE IF EXISTS personnel;
+
+CREATE TABLE personnel (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    first_name TEXT,
+    last_name TEXT
+);
+ 
+ INSERT INTO personnel (
+    first_name,
+    last_name
+ ) VALUES (
+    "Christian",
+    "Bale");
+
+ INSERT INTO personnel (
+    first_name,
+    last_name
+ ) VALUES (
+    "Michael",
+    "Caine");
+
+ INSERT INTO personnel (
+    first_name,
+    last_name
+ ) VALUES (
+    "Liam",
+    "Neeson");
+
+ INSERT INTO personnel (
+    first_name,
+    last_name
+ ) VALUES (
+    "Katie",
+    "Holmes");
+
+ INSERT INTO personnel (
+    first_name,
+    last_name
+ ) VALUES (
+    "Gary",
+    "Oldman");
+
+ INSERT INTO personnel (
+    first_name,
+    last_name
+ ) VALUES (
+    "Heath",
+    "Ledger");
+
+ INSERT INTO personnel (
+    first_name,
+    last_name
+ ) VALUES (
+    "Aaron",
+    "Eckhart");
+
+ INSERT INTO personnel (
+    first_name,
+    last_name
+ ) VALUES (
+    "Maggie",
+    "Gyllenhaal");
+
+ INSERT INTO personnel (
+    first_name,
+    last_name
+ ) VALUES (
+    "Tom",
+    "Hardy");
+
+ INSERT INTO personnel (
+    first_name,
+    last_name
+ ) VALUES (
+    "Joseph",
+    "Gordon");
+
+ INSERT INTO personnel (
+    first_name,
+    last_name
+ ) VALUES (
+    "Anne",
+    "Hathaway");
