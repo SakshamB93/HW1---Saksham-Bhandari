@@ -145,7 +145,6 @@ CREATE TABLE movies (
     movie_title TEXT,
     release_year INTEGER,
     mpaa_rating TEXT,
-    studio_name TEXT,
     studio_id INTEGER
 );
 
@@ -153,36 +152,36 @@ INSERT INTO movies (
     movie_title,
     release_year,
     mpaa_rating,
-    studio_name
+    studio_id
 ) VALUES (
     "Batman Begins",
     2005,
     "PG-13",
-    "Warner Bros"
+    1
 );
 
 INSERT INTO movies (
     movie_title,
     release_year,
     mpaa_rating,
-    studio_name
+    studio_id
 ) VALUES (
     "The Dark Knight",
     2008,
     "PG-13",
-    "Warner Bros"
+    1
 );
 
 INSERT INTO movies (
     movie_title,
     release_year,
     mpaa_rating,
-    studio_name
+    studio_id
 ) VALUES (
     "The Dark Knight Rises",
     2012,
     "PG-13",
-    "Warner Bros"
+    1
 );
 
 DROP TABLE IF EXISTS personnel;
@@ -429,3 +428,16 @@ INSERT INTO characters (
     3
 );
 
+
+DROP TABLE IF EXISTS studios;
+
+CREATE TABLE studios (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    studio_name TEXT
+);
+
+INSERT INTO studios (
+    studio_name
+) VALUES (
+    "Warner Bros"
+);
