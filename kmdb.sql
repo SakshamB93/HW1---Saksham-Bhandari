@@ -121,18 +121,13 @@
 -- TODO!
 
 -- Prints a header for the movies output
-.print "Movies"
-.print "======"
-.print ""
+
 
 -- The SQL statement for the movies output
 -- TODO!
 
 -- Prints a header for the cast output
-.print ""
-.print "Top Cast"
-.print "========"
-.print ""
+
 
 
 -- The SQL statement for the cast output
@@ -441,3 +436,22 @@ INSERT INTO studios (
 ) VALUES (
     "Warner Bros"
 );
+
+.print "Movies"
+.print "======"
+.print ""
+
+SELECT movies.movie_title, movies.release_year,movies.mpaa_rating,studios.studio_name 
+FROM movies
+INNER JOIN studios ON studios.id=movies.studio_id;
+
+.print ""
+.print "Top Cast"
+.print "========"
+.print ""
+
+SELECT movies.movie_title
+FROM movies
+INNER JOIN characters ON characters.movies_id=movies.id
+SELECT personnel.first_name, personnel.last_name, characters.character_name
+INNER JOIN characters ON characters.personnel_id=personnel.id;
