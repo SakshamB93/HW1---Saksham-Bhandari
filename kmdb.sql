@@ -269,3 +269,163 @@ CREATE TABLE personnel (
  ) VALUES (
     "Anne",
     "Hathaway");
+
+DROP TABLE IF EXISTS characters;
+
+CREATE TABLE characters(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    character_name TEXT,
+    personnel_id INTEGER,
+    movies_id INTEGER
+);
+
+INSERT INTO characters (
+    character_name,
+    personnel_id,
+    movies_id
+) VALUES (
+    "Bruce Wayne",
+    1,
+    1
+);
+
+INSERT INTO characters (
+    character_name,
+    personnel_id,
+    movies_id
+) VALUES (
+    "Alfred",
+    2,
+    1
+);
+
+INSERT INTO characters (
+    character_name,
+    personnel_id,
+    movies_id
+) VALUES (
+    "Ra's Al Ghul",
+    3,
+    1
+);
+
+INSERT INTO characters (
+    character_name,
+    personnel_id,
+    movies_id
+) VALUES (
+    "Rachel Dawes",
+    4,
+    1
+);
+
+INSERT INTO characters (
+    character_name,
+    personnel_id,
+    movies_id
+) VALUES (
+    "Commissioner Gordon",
+    5,
+    1
+);
+
+INSERT INTO characters (
+    character_name,
+    personnel_id,
+    movies_id
+) VALUES (
+    "Bruce Wayne",
+    1,
+    2
+);
+
+INSERT INTO characters (
+    character_name,
+    personnel_id,
+    movies_id
+) VALUES (
+    "Joker",
+    6,
+    2
+);
+
+INSERT INTO characters (
+    character_name,
+    personnel_id,
+    movies_id
+) VALUES (
+    "Harvey Dent",
+    7,
+    2
+);
+
+INSERT INTO characters (
+    character_name,
+    personnel_id,
+    movies_id
+) VALUES (
+    "Alfred",
+    2,
+    2
+);
+
+INSERT INTO characters (
+    character_name,
+    personnel_id,
+    movies_id
+) VALUES (
+    "Rachel Dawes",
+    8,
+    2
+);
+
+INSERT INTO characters (
+    character_name,
+    personnel_id,
+    movies_id
+) VALUES (
+    "Bruce Wayne",
+    1,
+    3
+);
+
+INSERT INTO characters (
+    character_name,
+    personnel_id,
+    movies_id
+) VALUES (
+    "Commissioner Gordon",
+    5,
+    3
+);
+
+INSERT INTO characters (
+    character_name,
+    personnel_id,
+    movies_id
+) VALUES (
+    "Bane",
+    9,
+    3
+);
+
+INSERT INTO characters (
+    character_name,
+    personnel_id,
+    movies_id
+) VALUES (
+    "John Blake",
+    10,
+    3
+);
+
+INSERT INTO characters (
+    character_name,
+    personnel_id,
+    movies_id
+) VALUES (
+    "Selina Kyle",
+    11,
+    3
+);
+
